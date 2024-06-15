@@ -1,0 +1,281 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif; 
+  background-color: #faf6f6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+footer {
+  background-color: #3c3c3c;
+  color: #ffffff;
+  font-size: 14px;
+  text-align: center;
+  padding: 10px 0;
+  flex-shrink: 0;
+}
+main {
+  flex: 1 0 auto;
+}
+
+
+header {
+  height: 50px; 
+  background: linear-gradient(to right, #d42424, #ff7f7f, #d42424);
+  border-top: 1px solid #888; 
+  border-bottom: 1px solid #888; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3%;
+}
+header p{
+  background-color: #d42424;
+  color: white;
+  font-size: 24px; 
+  text-transform: uppercase;
+}
+
+header h1 {
+  font-size: 24px; 
+  background-color: #d42424;
+}
+
+header input[type="search"] {
+  width: 200px; 
+}
+
+nav {
+  background-color: #dddddd; 
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-left: auto;
+}
+
+nav li {
+  display: inline-block;
+  padding: 7px;
+  margin: 0px;
+  background-color: #d42424;
+  text-align: left;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+}
+nav a:hover{
+  background: white;
+  color: red;
+  padding: 7px;
+}
+.main-content {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  gap: 20px; 
+  padding: 20px;
+  border: 1px solid black;
+  width: 70%;
+  margin: 0 auto;
+  background-color: #f6f6f6;
+}
+.main-content h2{
+  text-align: left;
+  width: 100%;
+  position: relative;
+  
+}
+.main-content hr{
+  border-color: black;
+  
+}
+.articles {
+  display: flex; 
+  justify-content: space-between; 
+  width: 100%;
+  flex-wrap: wrap; 
+}
+.article-block {
+  background-color: #ffffff;
+  width: calc(33% - 10px); 
+  display: flex; 
+  flex-direction: column; 
+  margin-bottom: 20px; 
+  box-sizing: border-box;
+}
+
+.article-block img {
+  width: 80%;
+  height: auto;
+  padding: 3%;
+  flex-direction: row;
+}
+
+.article-block h3, .article-block p{
+  font-size: 18px; 
+  padding: 10px;
+}
+.article-block a{
+  color: black;
+  text-decoration: none;
+}
+.logo{
+  margin-right: 0px;
+  border: 7px solid #d42424;
+}
+.logo h1 {
+  font-size: 48px;
+  color: white;
+}
+.logo p {
+  font-size: 10px;
+}
+.clanci {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  gap: 20px; 
+  padding: 0px;
+  border: 1px solid black;
+  width: 50%;
+  margin: 0 auto;
+  background-color: white;
+}
+.clanci img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  height: auto;
+  background-color: #f6f6f6;
+}
+.clanci h3{
+  color: gray;
+  text-align: left;
+  display: block;
+  margin-right: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.clanci h1{
+  background-color: #f6f6f6;
+  padding: 8px;
+  border: 1px solid white;
+}
+.clanci p{
+  background-color: #f6f6f6;
+  margin: 0 auto;
+  padding: 8px;
+  align-content: center;
+}
+.pozadina{
+  background: linear-gradient(to right, #d42424, #ff7f7f, #d42424);
+}
+.clanci body{
+  background: linear-gradient(to right, #d42424, #ff7f7f, #d42424);
+}
+.pozadinaClanka{
+  background-color: #f6f6f6;
+  gap: 22px;
+}
+.naslovnica{
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  gap: 20px; 
+  padding: 0px;
+  width: 50%;
+  margin: 0 auto;
+  background-color: white;
+}
+ form{
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  gap: 5px; 
+  padding: 0px;
+  width: 50%;
+  margin: 0 auto;
+  background-color: white;
+  font-family: "Open Sans";
+  font-size: 20px;
+}
+form input,
+form select,
+form label
+{
+  display: block;
+  width: 80%;
+  box-sizing: border-box;
+  margin: 0 10px 10px;
+}
+form button {
+  height: 40px;
+  line-height: 30px;
+  background: linear-gradient(to right, #d42424, #ff7f7f, #d42424);
+  color: white;
+  cursor: pointer;
+  border: 0;
+  flex: 1;
+  margin: 0 5px;
+}
+form input {
+  height: 25px;
+  line-height: 25px;
+  color: #000;
+  padding: 0 6px;
+  box-sizing: border-box;
+}
+form .error {
+  color: #ff0000;
+}
+form .button-container{
+  height: 40px;
+  line-height: 30px;
+  color: white;
+  cursor: pointer;
+  border: 0;
+  flex: 1;
+  margin: 30 5px;
+  background: transparent;
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.button-container button {
+  display: inline-flex;
+  justify-content: center;
+  padding: 7px 25px;
+  width: 150px;
+  margin: 10px;
+}
+textarea{
+  width: 80%;
+  height: 100px;
+}
+.checkbox-container {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 10px;
+  align-items:flex-start;
+}
+
+.checkbox-container label {
+ margin: -15px;
+}
+.centriraj{
+  text-align: center;
+  margin-top: 20px;
+}
